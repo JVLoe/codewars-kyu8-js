@@ -304,3 +304,134 @@ function oddOrEven(array) {
 function numberToString(num) {
     return String(num);
 }
+
+// Convert a String to a Number!
+
+const stringToNumber = function(str){
+    return parseInt(str);
+}
+
+// Beginner - Lost Without a Map
+function maps(x){
+    return x.map(x => x * 2);
+}
+
+// L1: Set Alarm
+function setAlarm(employed, vacation){
+    if (employed === true && vacation === false) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+    let average = classPoints.reduce((a, b) => a + b, 0) / classPoints.length;
+    return yourPoints > average ? true : false;
+}
+
+// Keep up the hoop
+function hoopCount (n) {
+    return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
+}
+
+// Sentence Smash
+function smash (words) {
+    return words.join(' ');
+};
+
+// String repeat
+function repeatStr (n, s) {
+    return s.repeat(n);
+}
+
+// Sum without highest and lowest number
+function sumArray(array) {
+    if (array == null || array.length <= 2){
+        return 0;
+    }
+
+    let max = Math.max.apply(Math, array);
+    let min = Math.min.apply (Math, array);
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total - min - max;
+}
+
+// Remove First and Last Character
+function removeChar(str){
+    if (str.length >= 2) {
+        return str.substring(1, str.length - 1);
+    }
+};
+
+// Even or Odd
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+// If you can't sleep, just count sheep!!
+function countSheep(num){
+    let str = "";
+    for (let i = 1; i <= num; i++) {
+        str += `${i} sheep...`;
+    }
+    return str;
+}
+
+// Area or Perimeter
+const areaOrPerimeter = function(l , w) {
+    if (l === w) {
+        return l * w;
+    } else {
+        return (l + w) * 2;
+    }
+};
+
+// Calculate BMI
+function bmi(weight, height) {
+    let bmi = weight / (height * height);
+    if (bmi <= 18.5) {
+        return "Underweight";
+    } else if (bmi <= 25) {
+        return "Normal";
+    } else if (bmi <= 30) {
+        return "Overweight";
+    } else {
+        return "Obese";
+    }
+}
+
+// Grasshopper - Summation
+function summation(num) {
+    let sum = 0
+    for(let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum
+}
+
+// Sum Arrays
+function sum (numbers) {
+    "use strict";
+    let total = 0;
+    for (let i = 0; i < numbers.length; i += 1) {
+        total += numbers[i];
+    }
+    if (total > 0 | total < 0) {
+        return total;
+    } else {
+        return 0;
+    }
+};
+
+
+
+
