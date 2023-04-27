@@ -465,3 +465,28 @@ const max = list => Math.max.apply(null, list);
 
 const min1 = (list) => Math.min(...list);
 const max1 = (list) => Math.max(...list);
+
+// Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+    switch (current) {
+        case 'green':
+            return 'yellow';
+            break;
+        case 'yellow':
+            return 'red';
+            break;
+        case 'red':
+            return 'green';
+            break;
+    }
+}
+
+function updateLight1(current) {
+    return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+}
+
+const updateLight2 = current => ({
+    green: 'yellow',
+    yellow: 'red',
+    red: 'green',
+})[current]
