@@ -432,6 +432,15 @@ function sum (numbers) {
     }
 };
 
+// Parse nice int from char problem
+function getAge(inputString){
+    const arr = inputString.split(" ");
+    return Number(arr[0]);
+}
+
+function getAge1(inputString){
+    return parseInt(inputString);
+}
 
 
 
