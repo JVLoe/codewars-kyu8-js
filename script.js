@@ -458,3 +458,14 @@ function greet2(name, owner) {
 // Century From Year
 const century = year => Math.floor((year-1)/100) + 1;
 const century2 = year => Math.ceil(year/100)
+
+// Exes and Ohs
+function XO(str) {
+    let x = str.match(/x/gi);
+    let o = str.match(/o/gi);
+    return (x && x.length) === (o && o.length);
+}
+const XO1 = str => {
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+}
