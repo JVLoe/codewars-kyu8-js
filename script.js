@@ -454,3 +454,7 @@ function greet (name, owner) {
 function greet2(name, owner) {
     return name === owner ? 'Hello boss' : 	'Hello guest';
 }
+
+// Century From Year
+const century = year => Math.floor((year-1)/100) + 1;
+const century2 = year => Math.ceil(year/100)
