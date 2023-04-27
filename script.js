@@ -459,3 +459,9 @@ function greet2(name, owner) {
 const century = year => Math.floor((year-1)/100) + 1;
 const century2 = year => Math.ceil(year/100)
 
+// Find Maximum and Minimum Values of a List
+const min = list => Math.min.apply(null, list);
+const max = list => Math.max.apply(null, list);
+
+const min1 = (list) => Math.min(...list);
+const max1 = (list) => Math.max(...list);
