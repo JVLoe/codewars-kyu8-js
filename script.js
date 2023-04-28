@@ -490,3 +490,9 @@ const updateLight2 = current => ({
     yellow: 'red',
     red: 'green',
 })[current]
+
+// Third Angle of a Triangle
+function otherAngle(a, b) {
+    return 180 - (a + b);
+}
+
