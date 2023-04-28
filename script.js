@@ -496,3 +496,7 @@ function otherAngle(a, b) {
     return 180 - (a + b);
 }
 
+// Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
